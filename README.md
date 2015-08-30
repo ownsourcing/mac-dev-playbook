@@ -1,6 +1,8 @@
 # Mac Development Ansible Playbook
 
-This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in OS X are difficult to automate (notably, the Mac App Store and certain tools from Apple), so I still have some manual installation steps, but at least it's all documented here.
+We're adapting this playbook to install and configures most of the software our team uses on Macs for web and software development. It's forked directly from [continue edits that give credit and explain]...
+
+Some things in OS X are difficult to automate (notably, the Mac App Store and certain tools from Apple), so I still have some manual installation steps, but at least it's all documented here.
 
 This is a work in progress, and is mostly a means for me to document my current Mac's setup. I'll be adding settings and packages to this set of playbooks over time.
 
