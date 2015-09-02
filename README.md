@@ -109,6 +109,11 @@ These are mostly direct download links, some are more difficult to install becau
     git clone git://github.com/scrooloose/nerdtree.git
     ```
 
+  - in order to have all apps appear in /Applications vs ~/Applications, use 
+    ```
+    export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+    ```
+
 ### Apps only available via the App Store
 
 I also use the following apps at least once or twice per week, but unfortunately, as the Mac App Store is not able to be controlled via CLI, or any other way I can find (so far), I have to manually install all of these apps from within the App Store application.
