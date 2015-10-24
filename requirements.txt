@@ -1,2 +1,2 @@
-onso.dotfiles
-onso.homebrew
+geerlingguy.dotfiles
+geerlingguy.homebrew
