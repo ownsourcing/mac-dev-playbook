@@ -1,14 +1,14 @@
 ---
 - hosts: localhost
-  user: jgeerling
+  user: onso
   connection: local
 
   vars_files:
     - vars/main.yml
 
   roles:
-    - geerlingguy.homebrew
-    - geerlingguy.dotfiles
+    - onso.homebrew
+    - onso.dotfiles
 
   tasks:
     - include: tasks/ansible-setup.yml
