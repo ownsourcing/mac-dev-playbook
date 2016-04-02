@@ -114,6 +114,15 @@ These are mostly direct download links, some are more difficult to install becau
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
     ```
 
+  - to have git ignore certain files globally, use  
+    ```
+    printf '.DS_Store\n' > .gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global
+    ```
+
+  - to have git include standing aliases and upstreams, use (?)
+
+
 ### Apps only available via the App Store
 
 I also use the following apps at least once or twice per week, but unfortunately, as the Mac App Store is not able to be controlled via CLI, or any other way I can find (so far), I have to manually install all of these apps from within the App Store application.
