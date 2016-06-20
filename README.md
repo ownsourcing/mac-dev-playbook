@@ -48,6 +48,7 @@ Applications (installed with Homebrew Cask):
   - Vagrant (+ Vagrant Manager)
   - VirtualBox
   - VLC
+  - xquartz
 
 Packages (installed with Homebrew):
 
