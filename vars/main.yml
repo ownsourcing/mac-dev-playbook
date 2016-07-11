@@ -16,20 +16,27 @@ homebrew_installed_packages:
   - ansible
   - autoconf
   - bash-completion
-  - boot2docker
   - docker
+  - docker-compose
+  - docker-machine
   - gettext
   - git
   - go
   - gpg
+  - hub
+  - httpie
   - iperf
+  - libdvdcss
   - libevent
   - packer
   - python
   - sqlite
+  - mcrypt
   - mysql
   - npm
+  - nvm
   - php56
+  - php56-mcrypt
   - php56-xdebug
   - ssh-copy-id
   - cowsay

@@ -2,9 +2,9 @@
 
 We're adapting this playbook to install and configures most of the software our team uses on Macs for web and software development. It's forked directly from [continue edits that give credit and explain]...
 
-Some things in OS X are difficult to automate (notably, the Mac App Store and certain tools from Apple), so I still have some manual installation steps, but at least it's all documented here.
+Some things in OS X are difficult to automate (notably, the Mac App Store and certain tools from Apple), so we still have some manual installation steps, but at least it's all documented here.
 
-This is a work in progress, and is mostly a means for me to document my current Mac's setup. I'll be adding settings and packages to this set of playbooks over time.
+This is a work in progress, and is mostly a means for us to document our preferred Mac setup from a clean install. We'll sync this repo with GeerlingGuy's as he and we add settings and packages to this set of playbooks over time.
 
 *See also*:
 
@@ -17,8 +17,8 @@ This is a work in progress, and is mostly a means for me to document my current 
   1. [Install Ansible](http://docs.ansible.com/intro_installation.html).
   2. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
   3. Clone this repository to your local drive.
-  4. Run the command `$ ansible-galaxy install -r requirements.txt` inside this directory to install required Ansible roles.
-  5. Run `ansible-playbook main.yml -i inventory --ask-sudo-pass` from the same directory as this README file.
+  4. Run the command `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+  5. Run `ansible-playbook main.yml -i inventory -u [username] -U [username] --ask-sudo-pass` from the same directory as this README file (substitute `[username]` for your macOS account username). Enter your account password when prompted.
 
 ## Included Applications / Configuration
 
@@ -48,7 +48,7 @@ Applications (installed with Homebrew Cask):
   - Vagrant (+ Vagrant Manager)
   - VirtualBox
   - VLC
-  - 
+  -
 
 Packages (installed with Homebrew):
 
@@ -73,7 +73,11 @@ Packages (installed with Homebrew):
   - wget
   - brew-cask
 
+<<<<<<< HEAD
 OwnSourcing [dotfiles](https://github.com/ownsourcing/dotfiles) (derived from work by [GeerlingGuy](https://github.com/gerlingguy/dotfiles), as is the rest of this playbook) are also installed into the current user's home directory (@TODO - confirm this location is in fact being used), including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
+=======
+My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use.
+>>>>>>> b084ebe8f736dd246a18dbd676d4a673744d4208
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
@@ -111,7 +115,7 @@ These are mostly direct download links, some are more difficult to install becau
     git clone git://github.com/scrooloose/nerdtree.git
     ```
 
-  - in order to have all apps appear in /Applications vs ~/Applications, use 
+  - in order to have all apps appear in /Applications vs ~/Applications, use
     ```
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
     ```
@@ -132,7 +136,6 @@ I also use the following apps at least once or twice per week, but unfortunately
   - Tweetbot
   - RadarScope
   - Pixelmator
-  - Skitch
   - Quick Resizer
   - 1Password
   - DaisyDisk
@@ -150,8 +153,8 @@ Many people have asked me if I often wipe my entire workstation and start from s
 
 ## Ansible for DevOps
 
-Check out [Ansible for DevOps](https://leanpub.com/ansible-for-devops), which will teach you how to do some other amazing things with Ansible.
+Check out [Ansible for DevOps](http://www.ansiblefordevops.com/), which will teach you how to do some other amazing things with Ansible.
 
 ## Author
 
-[Jeff Geerling](http://jeffgeerling.com/), 2014 (originally forked from [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
+[Jeff Geerling](http://jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
