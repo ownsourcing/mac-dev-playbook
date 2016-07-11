@@ -48,6 +48,7 @@ Applications (installed with Homebrew Cask):
   - Vagrant (+ Vagrant Manager)
   - VirtualBox
   - VLC
+  - 
 
 Packages (installed with Homebrew):
 
@@ -72,7 +73,7 @@ Packages (installed with Homebrew):
   - wget
   - brew-cask
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
+OwnSourcing [dotfiles](https://github.com/ownsourcing/dotfiles) (derived from work by [GeerlingGuy](https://github.com/gerlingguy/dotfiles), as is the rest of this playbook) are also installed into the current user's home directory (@TODO - confirm this location is in fact being used), including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
@@ -96,6 +97,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:
 
   - [iShowU HD](http://downloads.shinywhitebox.com/iShowU_HD_Pro_2.3.7.dmg)
+  - xquartz
 
 ### Configuration to be added:
 
@@ -108,6 +110,20 @@ These are mostly direct download links, some are more difficult to install becau
     cd ~/.vim/bundle
     git clone git://github.com/scrooloose/nerdtree.git
     ```
+
+  - in order to have all apps appear in /Applications vs ~/Applications, use 
+    ```
+    export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+    ```
+
+  - to have git ignore certain files globally, use  
+    ```
+    printf '.DS_Store\n' > .gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global
+    ```
+
+  - to have git include standing aliases and upstreams, use (?)
+
 
 ### Apps only available via the App Store
 
