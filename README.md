@@ -73,11 +73,7 @@ Packages (installed with Homebrew):
   - wget
   - brew-cask
 
-<<<<<<< HEAD
 OwnSourcing [dotfiles](https://github.com/ownsourcing/dotfiles) (derived from work by [GeerlingGuy](https://github.com/gerlingguy/dotfiles), as is the rest of this playbook) are also installed into the current user's home directory (@TODO - confirm this location is in fact being used), including the `.osx` dotfile for configuring many aspects of Mac OS X for better performance and ease of use.
-=======
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use.
->>>>>>> b084ebe8f736dd246a18dbd676d4a673744d4208
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
