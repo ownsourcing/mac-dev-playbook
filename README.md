@@ -53,6 +53,7 @@ Applications (installed with Homebrew Cask):
 Packages (installed with Homebrew):
 
   - ansible
+  - atom
   - autoconf
   - gettext
   - libevent
