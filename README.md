@@ -6,15 +6,12 @@ Some things in OS X are difficult to automate (notably, the Mac App Store and ce
 
 This is a work in progress, and is mostly a means for us to document our preferred Mac setup from a clean install. We'll sync this repo with GeerlingGuy's as he and we add settings and packages to this set of playbooks over time.
 
-*See also*:
-
-  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool) is a more general solution than what I've built here. (It may be a better option if you don't want to fork this repo and hack it for your own workstation...).
-  - [osxc](https://github.com/osxc) is another more general solution, set up so you can fork the [xc-custom](https://github.com/osxc/xc-custom) repo and get your own local environment bootstrapped quickly.
-  - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) was the original inspiration for this repository, but this project has since been completely rewritten.
-
 ## Installation
 
-  1. [Install Ansible](http://docs.ansible.com/intro_installation.html).
+  1. Install Ansible with the following commands
+    - sudo easy_install pip
+    - sudo pip install ansible
+    - xcode-select --install
   2. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).
   3. Clone this repository to your local drive.
   4. Run the command `$ ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
