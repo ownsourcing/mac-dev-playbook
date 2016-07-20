@@ -36,6 +36,7 @@ Applications (installed with Homebrew Cask):
   - Sequel Pro (MySQL client)
   - Skype
   - Skitch
+  - Slack
   - Seil
   - Sublime Text
   - TextMate
