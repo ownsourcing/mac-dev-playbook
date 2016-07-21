@@ -1,6 +1,6 @@
 # Mac Development Ansible Playbook
 
-We're adapting this playbook to install and configures most of the software our team uses on Macs for web and software development. It's forked directly from [continue edits that give credit and explain]...
+We're adapting this playbook to install and configure most of the software our team uses on Macs for web and software development. It's forked directly from and periodically gets updates from [continue edits that give credit and explain]...
 
 Some things in OS X are difficult to automate (notably, the Mac App Store and certain tools from Apple), so we still have some manual installation steps, but at least it's all documented here.
 
@@ -8,9 +8,9 @@ This is a work in progress, and is mostly a means for us to document our preferr
 
 *See also*:
 
-  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool) is a more general solution than what I've built here. (It may be a better option if you don't want to fork this repo and hack it for your own workstation...).
+  - [Battleschool](http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool) is a more general solution than what GeerlingGuy built here. (He notes that it may be a better option if you don't want to fork this repo and hack it for your own workstation...).
   - [osxc](https://github.com/osxc) is another more general solution, set up so you can fork the [xc-custom](https://github.com/osxc/xc-custom) repo and get your own local environment bootstrapped quickly.
-  - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) was the original inspiration for this repository, but this project has since been completely rewritten.
+  - [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks) was GeerlingGuy's original inspiration for this repository, but according to him this project has since been completely rewritten.
 
 ## Installation
 
