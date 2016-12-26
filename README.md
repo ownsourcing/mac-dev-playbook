@@ -33,7 +33,7 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - cowsay
       - git
       - go
-    
+
     mas_installed_app_ids:
       - 443987910 # 1Password
       - 498486288 # Quick Resizer
@@ -123,6 +123,10 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
   5. Set trackpad tracking rate.
   6. Set mouse tracking rate.
   7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
+  8. Generate keypair and add public key to the following services:
+    - github
+    - bitbucket
+    - Acquia
 
 ### Applications/packages to be added:
 
@@ -148,6 +152,13 @@ These are mostly direct download links, some are more difficult to install becau
 Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
 
 Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/geerlingguy/mac-dev-playbook).
+
+## Spinning down current build before retiring it
+
+git repos
+- find all `find <directory> -name "<filename>" -print`
+- ensure all changes are pushed
+- ensure atom is not caching unsaved pages in a given directory
 
 ## Ansible for DevOps
 
