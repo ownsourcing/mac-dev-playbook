@@ -132,7 +132,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 
 These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:
 
-  - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
+  # - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
   - [Adobe Creative Cloud](http://www.adobe.com/creativecloud.html)
 
 ### Configuration to be added:
@@ -159,6 +159,7 @@ git repos
 - find all `find <directory> -name "<filename>" -print`
 - ensure all changes are pushed
 - ensure atom is not caching unsaved pages in a given directory
+useful apps (add them to lists here)
 
 ## Ansible for DevOps
 
