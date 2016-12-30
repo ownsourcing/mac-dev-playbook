@@ -1,0 +1,26 @@
+fitone before returning it to Apple
+acquia-dev-desktop
+google-chrome
+limechat
+skitch
+transmit
+atom
+handbrake
+macvim
+skype
+vagrant
+docker
+kdiff3
+nvalt
+slack
+virtualbox
+fing
+kitematic
+sequel-pro
+sublime-text
+vlc
+firefox
+licecap
+sketchup
+textwrangler
+yujitach-menumeters
