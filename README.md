@@ -69,6 +69,7 @@ Packages (installed with Homebrew):
   - openssl
   - pv
   - drush
+  - drush-launcher
   - wget
   - brew-cask
 
