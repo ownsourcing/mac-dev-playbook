@@ -70,6 +70,7 @@ Packages (installed with Homebrew):
   - pv
   - drush
   - drush-launcher
+  - gpatch
   - wget
   - brew-cask
 
